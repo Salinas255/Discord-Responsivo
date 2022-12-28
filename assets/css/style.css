@@ -1,0 +1,301 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+h1 {
+    font-family: 'Luckiest Guy';
+}
+
+p, button, h2 {
+    font-family: 'Open Sans';
+}
+
+header {
+    background-image: url(../images/Mobile/Header\ Background.png);
+    background-repeat: no-repeat;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 506px;
+
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header-tittle {
+    max-width: 278px;
+}
+
+.header-content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.header-content p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.buttons-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header-button {
+    height: 54px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.header-button1 {
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header-button2 {
+    background-color: #23272A;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.image-section1 {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.discord-servers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contents-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 0 24px 40px;
+}
+
+.contents-section1 h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.contents-section1 p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.discord-voice {
+    background-color: #F6F6F6;
+}
+
+.discord-connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.image-section2 img { 
+    width: 300px;
+    display: block;
+    text-align: center;
+}
+
+.contents-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 0 24px 40px;
+    max-width: 802px;
+}
+
+.contents-section2 h2 {
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contents-section2 p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 45px 0;
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 429px){
+    header {
+        background-image: url(../images/Desktop/Header\ Background\ 2.png);
+        height: 459px
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+    header {
+        padding: 0 70px;
+    }
+
+    .discord-servers {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        justify-content: center;
+    }
+
+    .image-section1 {
+        justify-content: center;
+    }
+
+    .contents-section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    .discord-voice {
+        flex-direction: row-reverse;
+    }
+
+    .contents-section2 {
+        align-items: center;
+    }
+
+    .contents-section2 p {
+        text-align: center;
+    }
+
+    .image-section2 img { 
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 801px){
+    header {
+        padding: 0 20%;
+    }
+
+    .header-content {
+        align-items: center;
+    }
+
+    .buttons-content {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .header-button {
+        height: 54px;
+        padding: 0 24px;
+        border-radius: 50px;
+    }
+
+    .header-button1:hover {
+        cursor: pointer;
+        color: #5865f2;
+        box-shadow: 0px 8px 20px rgb(35, 39, 42, 0.5);
+        transition: 0.2s;
+    }
+
+    .header-button2 {
+        background-color: #000;
+    }
+
+    .header-button2:hover {
+        cursor: pointer;
+        background-color: #23272A;
+        box-shadow: 0px 8px 20px rgb(35, 39, 42, 0.5);
+        transition: 0.2s;
+    }
+
+    .header-content h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .header-content p {
+        text-align: center;
+    }
+
+    .header-tittle {
+        max-width: 313px;
+        text-align: center;
+    }
+
+    .discord-servers {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .contents-section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        padding-bottom: 0;
+        justify-content: center;
+        width: 20.5625rem;
+        padding-bottom: 40px;
+    }
+
+    .image-section1 img {
+        width: 100%;
+        display: block;
+    }
+
+    .discord-voice {
+        flex-direction: row-reverse;
+    }
+
+    .contents-section2 {
+        align-items: center;
+    }
+
+    .contents-section2 p {
+        text-align: center;
+    }
+
+    .image-section2 img { 
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+}
